@@ -294,6 +294,17 @@ def show_timer():
         pyautogui.moveTo(SCREEN_X, SCREEN_Y , duration=0.5)
 #===================================================
 def lclick():
+    SCREEN_X = random.randint(500, 525)
+    SCREEN_Y = random.randint(400, 420)
+    SCREEN_13X = SCREEN_X + 600
+    if config.SCREEN_CONFIG == 11:
+        pyautogui.moveTo(-SCREEN_X, SCREEN_Y, duration=0.5)
+    elif config.SCREEN_CONFIG == 12:
+        pyautogui.moveTo(SCREEN_X, SCREEN_Y, duration=0.5)
+    elif config.SCREEN_CONFIG == 13:
+        pyautogui.moveTo(SCREEN_13X, SCREEN_Y, duration=0.5)
+    elif config.SCREEN_CONFIG == 2:
+        pyautogui.moveTo(SCREEN_X, SCREEN_Y, duration=0.5)
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0)
     time.sleep(0.1)
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0)
