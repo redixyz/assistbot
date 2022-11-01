@@ -1,4 +1,4 @@
-<h3 align="center"><a href="https://t.me/redixyzz"><img src="https://i.imgur.com/zxubBCR.png" width="1000"></a></h3>
+<h3 align="center"><a href="https://t.me/redixyzz"><img src="https://i.imgur.com/gfPSjTR.png" width="1000"></a></h3>
 
 ## RU: Это бот для управления компьютером с телефона с помощью телеграма.
 
