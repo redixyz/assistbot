@@ -13,3 +13,4 @@ pywin32-ctypes==0.2.0
 requests==2.27.1
 win32-setctime==1.1.0
 tk==0.1.0
+auto-py-to-exe==2.23.1
