@@ -8,8 +8,8 @@
 - управление музыкой (прошлый трек/пауза/следующий трек)
 - удобные вещи при просмотре кино (показать таймер, поставить на паузу(имитация лкм))
 ---
-- [гайд по установке]()
-- [гайд по настройке]()
+- [гайд по установке](https://youtu.be/eDWTnGZIX8Y)
+- [гайд по настройке](https://youtu.be/41Nafo5PWjU)
 ## EN: this is a bot to control the computer using the telegram
 
 ### Features
@@ -19,5 +19,4 @@
 - handy things when watching a movie (show timer, pause (imitation LMB))
 
 ---
-- [instalation guide]()
-- [configuration guide]()
+ssory, but i cant make guide on english language
