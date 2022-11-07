@@ -19,4 +19,4 @@
 - handy things when watching a movie (show timer, pause (imitation LMB))
 
 ---
-guide on english. coming soon
+video guide on english. coming soon
