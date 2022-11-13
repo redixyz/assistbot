@@ -19,4 +19,4 @@
 - handy things when watching a movie (show timer, pause (imitation LMB))
 
 ---
--[config guide](https://youtu.be/46w1Ats5LxY)
+- [config guide](https://youtu.be/46w1Ats5LxY)
