@@ -8,8 +8,8 @@
 - управление музыкой (прошлый трек/пауза/следующий трек)
 - удобные вещи при просмотре кино (показать таймер, поставить на паузу(имитация лкм))
 ---
-- [гайд по установке](https://youtu.be/UqtHbxK0eRA)
-- [гайд по настройке](https://youtu.be/7ZMHbdk6Ir8)
+**`!!!запустите файл setup.py после скачивания архива. а после посмотрите гайд по настройке!!!`**
+- [Гайд по настройке](https://youtu.be/7ZMHbdk6Ir8)
 ## EN: this is a bot to control the computer using the telegram
 
 ### Features
@@ -19,4 +19,7 @@
 - handy things when watching a movie (show timer, pause (imitation LMB))
 
 ---
-- [config guide](https://youtu.be/46w1Ats5LxY)
+
+**`!!!run setup.py file after download archive!!! then watch config guide`**
+
+- [Config guide](https://youtu.be/46w1Ats5LxY)
