@@ -57,9 +57,6 @@ def lclick():
     elif config.SCREEN_CONFIG == 2:
         pyautogui.moveTo(SCREEN_X, SCREEN_Y, duration=0.5)
     pyautogui.click()
-    #win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0)
-    #time.sleep(0.1)
-    #win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0)
     print('Left Click')
 #===================================================
 def skip_kinopoisk():
@@ -69,25 +66,25 @@ def skip_kinopoisk():
 def skip_jutsu():
     pyautogui.click(-1800, 1012)
 #===================================================
-def show_secret(various, label, title):
-    if various == "error":
-        mb.showerror(label, title)
-    elif various == "warning":
-        mb.showwarning(label, title)
-    elif various == "info":
-        mb.showinfo(label, title)
+# def show_secret(various, label, title):
+#     if various == "error":
+#         mb.showerror(label, title)
+#     elif various == "warning":
+#         mb.showwarning(label, title)
+#     elif various == "info":
+#         mb.showinfo(label, title)
 #===================================================
 def start():
-    mb.showinfo("ВСЕ ЗАЕБИСЬ (НЕТ)", "Удаленный ассистен телеграмм запущен!")
+    mb.showinfo("приятного пользования", "Удаленный ассистен телеграмм запущен!")
 #===================================================
 def change_to_speakers():
-    os.system("C:\\Users\\redixyz\\nircmd\\nircmd.exe setdefaultsounddevice \"2.1\" 1")
+    os.system("C:\\assistbot\\nircmd.exe setdefaultsounddevice \"2.1\" 1")
 def change_to_headset():
-    os.system("C:\\Users\\redixyz\\nircmd\\nircmd.exe setdefaultsounddevice \"Динамики\" 1")
+    os.system("C:\\assistbot\\nircmd.exe setdefaultsounddevice \"Динамики\" 1")
 def monitor_off():
-    os.system("C:\\Users\\redixyz\\nircmd\\nircmd.exe monitor off")
+    os.system("C:\\assistbot\\nircmd.exe monitor off")
 def monitor_on():
-    os.system("C:\\Users\\redixyz\\nircmd\\nircmd.exe monitor on")
+    os.system("C:\\assistbot\\nircmd.exe monitor on")
 
 def web_browser():
     webbrowser.open('google.com')
