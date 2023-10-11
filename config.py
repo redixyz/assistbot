@@ -1,8 +1,7 @@
 
 #ТОКЕНЫ ДЛЯ БОТА В ТГ. ЗАСОВЫВАЙТЕ ТОКЕН В "MAIN_BOT_TOKEN"
 #USE "MAIN_BOT_TOKEN"
-MAIN_BOT_TOKEN = ""
-TEST_BOT_TOKEN = ""
+BOT_TOKEN = "5536244524:AAEK4grS9Yk3FoVpJlSg47c_MU85Mg_1Cvo"
 
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 #Для старта напишите в бота "/r"
