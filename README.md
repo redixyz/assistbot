@@ -1,25 +1,25 @@
 <h3 align="center"><a href="https://t.me/redixyz"><img src="https://i.imgur.com/nb0eibx.png" width="1000"></a></h3>
 
-## RU: Это бот для управления компьютером с телефона с помощью телеграма.
+# RU: Это бот для управления компьютером с телефона с помощью телеграма.
 
-### Возможности
-Управления громкости: 
+## Возможности
 
-- уменьшение громкости 
+*****
+### **Управления громкости:**
+
+- уменьшение громкости
 
 - отключение звука 
 
-- увеличение громкости 
-
-Управление мультимедийными клавишами: 
+- увеличение громкости
+### **Управление мультимедийными клавишами:** 
 
 - предыдущий трек 
 
 - пауза 
 
-- Следующий трек 
-
-Управление питанием: 
+- Следующий трек
+### **Управление питанием:** 
 
 - выключение компьютера 
 
@@ -27,7 +27,7 @@
 
 - выключение через X минут 
 
-Удобства при просмотре кино, сериалов и тд: 
+### **Удобства при просмотре кино, сериалов и тд:** 
 
  - посмотреть сколько времени осталось до конца серии 
 
@@ -41,16 +41,24 @@
 
  - пропуск заставки на jut su 
 
-Прочее: 
+### **Прочее:** 
 
  - выключение и включение монитора(ов)	 
 ---
 **`обязательно к просмотру:`**
 - [Гайд по настройке](https://youtu.be/7ZMHbdk6Ir8)
-## EN: this is a bot to control the computer using the telegram
+<br/><br/>
 
-### Features
-Volume Controls: 
+/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\
+\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/
+
+<br/><br/>
+# EN: this is a bot to control the computer using the telegram
+
+## Features
+
+*****
+### **Volume Controls:** 
 
  - volume reduction 
 
@@ -58,7 +66,7 @@ Volume Controls:
 
  - increase the volume 
 
-Managing multimedia keys: 
+### **Managing multimedia keys:** 
 
  - previous track 
 
@@ -66,7 +74,7 @@ Managing multimedia keys:
 
  - Next track 
 
-Power management: 
+### **Power management:** 
 
  - turning off the computer 
 
@@ -74,7 +82,7 @@ Power management:
 
 - shutdown after X minutes 
 
-Convenience when watching movies, TV series, etc.: 
+### **Convenience when watching movies, TV series, etc.:** 
 
  - see how much time is left until the end of the series 
 
@@ -88,7 +96,7 @@ Convenience when watching movies, TV series, etc.:
 
  - skipping the screensaver on jut su 
 
-Other: 
+### **Other:**
 
  - turning off and on the monitor(s)
 ---
