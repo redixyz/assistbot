@@ -3,23 +3,95 @@
 ## RU: Это бот для управления компьютером с телефона с помощью телеграма.
 
 ### Возможности
-- выключение/перезагрузка компьютера
-- управление громкостью (прибавить/убавить/убрать)
-- управление музыкой (прошлый трек/пауза/следующий трек)
-- удобные вещи при просмотре кино (показать таймер, поставить на паузу(имитация лкм))
+Управления громкости: 
+
+	- уменьшение громкости 
+
+	- отключение звука 
+
+	- увеличение громкости 
+
+Управление мультимедийными клавишами: 
+
+	- предыдущий трек 
+
+	- пауза 
+
+	- Следующий трек 
+
+Управление питанием: 
+
+	- выключение компьютера 
+
+- перезагрузка 
+
+- выключение через X минут 
+
+Удобства при просмотре кино, сериалов и тд: 
+
+ - посмотреть сколько времени осталось до конца серии 
+
+ - поставить на паузу 
+
+ - открыть браузер 
+
+ - ручной ввод эмулируя клавиатуру 
+
+ - пропуск заставки на кинопоиске 
+
+ - пропуск заставки на jut su 
+
+Прочее: 
+
+ - выключение и включение монитора(ов)	 
 ---
-**`!!!запустите файл setup.py после скачивания архива. а после посмотрите гайд по настройке!!!`**
+**`обязательно к просмотру:`**
 - [Гайд по настройке](https://youtu.be/7ZMHbdk6Ir8)
 ## EN: this is a bot to control the computer using the telegram
 
 ### Features
-- shutdown/restart computer
-- volume control (add / decrease / remove)
-- music control (previous track/pause/next track)
-- handy things when watching a movie (show timer, pause (imitation LMB))
+Volume Controls: 
 
+ - volume reduction 
+
+ - mute the sound 
+
+ - increase the volume 
+
+Managing multimedia keys: 
+
+ - previous track 
+
+ - pause 
+
+ - Next track 
+
+Power management: 
+
+ - turning off the computer 
+
+- reboot 
+
+- shutdown after X minutes 
+
+Convenience when watching movies, TV series, etc.: 
+
+ - see how much time is left until the end of the series 
+
+ - put on pause 
+
+ - open the browser 
+
+ - manual input emulating the keyboard 
+
+ - skipping the screensaver on kinopoisk 
+
+ - skipping the screensaver on jut su 
+
+Other: 
+
+ - turning off and on the monitor(s)
 ---
 
-**`!!!run setup.py file after download archive!!! then watch config guide`**
-
+**`must-see:`**
 - [Config guide](https://youtu.be/46w1Ats5LxY)
