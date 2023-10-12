@@ -2,6 +2,7 @@ import os
 import shutil
 import requests
 import zipfile
+import getpass
 
 source = ['config.py', 'localfuncs.py', 'markups.py']
 dest = 'C://assistbot'
@@ -30,6 +31,6 @@ with open('nircmd.zip', 'wb') as f:
 
 with zipfile.ZipFile('nircmd.zip', mode='r') as archive:
     archive.extract('nircmd.exe', path=dest)
-
 os.remove('nircmd.zip')
-os.remove('nircmd.exe')
+
+#os.remove('nircmd.exe')

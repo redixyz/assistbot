@@ -1,3 +1,6 @@
+import getpass
+import shutil
+
 language = int(input("""CHOOSE LANGUAGE / ВЫБЕРИТЕ ЯЗЫК
 
         EN = 1 / RU = 2
@@ -62,3 +65,21 @@ with open('config.py', 'w') as cfg:
     cfg.write(f"""SCREEN_CONFIG = {moncfg}
 volume_step = {volume_step}
 BOT_TOKEN = \'{token}\'""")
+
+if language == 1:
+    x = int(input("""
+do you want to add this bot to startup?
+1 - yes
+0 - no 
+"""))
+
+if language == 2:
+    x = int(input("""
+Желаете ли вы добавить этого бота в автозагрузку?
+1 - да
+0 - нет
+"""))
+
+if x == 1:
+    shutil.copy('main.pyw', rf'C:\Users\{getpass.getuser()}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\main.pyw')
+else: pass
