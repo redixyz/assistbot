@@ -32,5 +32,3 @@ with open('nircmd.zip', 'wb') as f:
 with zipfile.ZipFile('nircmd.zip', mode='r') as archive:
     archive.extract('nircmd.exe', path=dest)
 os.remove('nircmd.zip')
-
-#os.remove('nircmd.exe')

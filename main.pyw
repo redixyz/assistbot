@@ -22,7 +22,8 @@ volume_keyboard = markups.volume_keyboard
 cinema_keyboard = markups.cinema_keyboard
 exit_keyboard = markups.exit_keyboard
 
-users = [1657230088, 778425555]
+users = []
+users.append(config.user)
 
 class UserState(StatesGroup):
     power = State()
@@ -80,7 +81,7 @@ async def overrides(message: types.Message, state: FSMContext):
     await message.answer("===== MAIN MENU! =====", reply_markup=power_keyboard)
     await state.finish()
 
-@dp.message_handler(Text(equals="/r"), state="*")
+@dp.message_handler(Text(equals="/start"), state="*")
 async def restart(message: types.Message, state: FSMContext):
     await message.answer("===== MAIN MENU! =====", reply_markup=power_keyboard)
     await state.finish()

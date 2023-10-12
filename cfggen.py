@@ -28,6 +28,7 @@ if language == 2:
         input('хорошо?')
     else:
         token = input("Токен телеграм бота: ")
+        user = int(input('ваш id в телеграмме (getmyid_bot): '))
 
 if language == 1:
     monitor_count = int(input("How many monitors are you using? (a number from 1 to 3):"))
@@ -52,6 +53,7 @@ if language == 1:
         input('k?')
     else:
         token = input("Telegram bot token: ")
+        user = int(input('your tg id (getmyid_bot): '))
 
 if monitor_count != 1:
     if cinemapos <= monitor_count:
@@ -64,7 +66,8 @@ config = open('config.py', 'x')
 with open('config.py', 'w') as cfg:
     cfg.write(f"""SCREEN_CONFIG = {moncfg}
 volume_step = {volume_step}
-BOT_TOKEN = \'{token}\'""")
+BOT_TOKEN = \'{token}\'
+user = {user}""")
 
 if language == 1:
     x = int(input("""
