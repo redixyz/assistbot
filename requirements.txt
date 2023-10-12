@@ -1,5 +1,5 @@
 aiofiles
-aiogram
+aiogram==2.25.2
 aiohttp
 aiosignal
 colorama
