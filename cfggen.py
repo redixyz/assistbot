@@ -51,23 +51,14 @@ if language == 1:
         token = input("Telegram bot token: ")
 
 if monitor_count != 1:
-    if monitor_count == 2:
-        if cinemapos == 1:
-            a=1
-        if cinemapos == 2:
-            a=2
-    if monitor_count == 3:
-        if cinemapos == 1:
-            a=1
-        if cinemapos == 2:
-            a=2
-        if cinemapos == 3:
-            a=3
-    moncfg = int('1'+str(a))
-else: moncfg = 2
+    if cinemapos <= monitor_count:
+        a = cinemapos
+    moncfg = int('1' + str(a))
+else:
+    moncfg = 2
 
 config = open('config.py', 'x')
 with open('config.py', 'w') as cfg:
     cfg.write(f"""SCREEN_CONFIG = {moncfg}
 volume_step = {volume_step}
-BOT_TOKEN = {token}""")
+BOT_TOKEN = \'{token}\'""")

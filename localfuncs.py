@@ -4,7 +4,6 @@ import random
 import config
 import tkinter.messagebox as mb
 import webbrowser
-import keyboard
 pyautogui.FAILSAFE = False
 
 def volume_down():
@@ -65,14 +64,6 @@ def skip_kinopoisk():
 #===================================================
 def skip_jutsu():
     pyautogui.click(-1800, 1012)
-#===================================================
-# def show_secret(various, label, title):
-#     if various == "error":
-#         mb.showerror(label, title)
-#     elif various == "warning":
-#         mb.showwarning(label, title)
-#     elif various == "info":
-#         mb.showinfo(label, title)
 #===================================================
 def start():
     mb.showinfo("приятного пользования", "Удаленный ассистен телеграмм запущен!")

@@ -15,7 +15,6 @@ import localfuncs
 storage = MemoryStorage()
 bot = Bot(token=config.BOT_TOKEN)
 dp = Dispatcher(bot, storage=storage)
-
 # KEYBOARDS!
 power_keyboard = markups.power_keyboard
 media_keyboard = markups.media_keyboard
@@ -33,7 +32,6 @@ class UserState(StatesGroup):
     secret = State()
     text = State()
     power_timer = State()
-
 
 @dp.message_handler(Text(equals='/monitor_off'), state='*')
 async def monitor_off(message: types.Message):
@@ -56,8 +54,6 @@ async def monitor_off(message: types.Message):
     else:
         await message.answer('u have no access')
 
-
-
 @dp.message_handler(Text(equals='/kskip'), state='*')
 async def kskip(message: types.Message):
     if message.from_user.id in users:
@@ -72,26 +68,6 @@ async def kskip(message: types.Message):
     else:
         await message.answer('u have no access')
 
-
-
-@dp.message_handler(Text(equals='/speakers'), state='*')
-async def speakersasshort(message: types.Message):
-    if message.from_user.id in users:
-        localfuncs.change_to_speakers()
-    else:
-        await message.answer('u have no access')
-
-
-
-@dp.message_handler(Text(equals='/headset'), state='*')
-async def headsetshort(message: types.Message):
-    if message.from_user.id in users:
-        localfuncs.change_to_headset()
-    else:
-        await message.answer('u have no access')
-
-
-
 @dp.message_handler(Text(startswith='/t'), state='*')
 async def textwritershort(message: types.Message):
     if message.from_user.id in users:
@@ -99,30 +75,15 @@ async def textwritershort(message: types.Message):
     else:
         await message.answer('u have no access')
 
-
-
 @dp.message_handler(Text(equals="❌"), state='*')
 async def overrides(message: types.Message, state: FSMContext):
     await message.answer("===== MAIN MENU! =====", reply_markup=power_keyboard)
     await state.finish()
 
-
 @dp.message_handler(Text(equals="/r"), state="*")
 async def restart(message: types.Message, state: FSMContext):
     await message.answer("===== MAIN MENU! =====", reply_markup=power_keyboard)
     await state.finish()
-
-
-@dp.message_handler(Text(equals="/secret"), state='*')
-async def secret(message: types.Message):
-    if message.from_user.id in users:
-        await message.answer("""u come to secret menu!!
-               select sign type""", reply_markup=secret_various_keyboard)
-        await UserState.secret_various.set()
-    else:
-        await message.answer('u have no access')
-
-
 
 @dp.message_handler(Text(equals='🎬'), state='*')
 async def cinema_menu(message: types.Message, state: FSMContext):
@@ -132,8 +93,6 @@ async def cinema_menu(message: types.Message, state: FSMContext):
         await UserState.cinema.set()
     else:
         await message.answer('u have no access')
-
-
 
 @dp.message_handler(Text(equals='🔋'), state='*')
 async def power_menu(message: types.Message, state: FSMContext):
@@ -153,8 +112,6 @@ async def media_menu(message: types.Message, state: FSMContext):
     else:
         await message.answer('u have no access')
 
-
-
 @dp.message_handler(Text(equals='👂'), state='*')
 async def volume_menu(message: types.Message, state: FSMContext):
     if message.from_user.id in users:
@@ -163,8 +120,6 @@ async def volume_menu(message: types.Message, state: FSMContext):
         await UserState.volume.set()
     else:
         await message.answer('u have no access')
-
-
 
 @dp.message_handler(state=UserState.cinema)
 async def cinema_state(message: types.Message):
