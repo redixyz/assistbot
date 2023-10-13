@@ -1,5 +1,6 @@
 import getpass
 import shutil
+import os
 
 language = int(input("""CHOOSE LANGUAGE / ВЫБЕРИТЕ ЯЗЫК
 
@@ -26,6 +27,7 @@ if language == 2:
     if volume_step % 2 == 0:
         print('ТОЛЬКО ЧЕТНЫЕ ЧИСЛА!!!!')
         input('хорошо?')
+        os._exit()
     else:
         token = input("Токен телеграм бота: ")
         user = int(input('ваш id в телеграмме (getmyid_bot): '))
@@ -51,6 +53,7 @@ if language == 1:
     if volume_step % 2 == 0:
         print('ONLY EVEN NUMBERS!!!!')
         input('k?')
+        os._exit()
     else:
         token = input("Telegram bot token: ")
         user = int(input('your tg id (getmyid_bot): '))
