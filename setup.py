@@ -1,6 +1,5 @@
 import os
 import shutil
-import requests
 import zipfile
 import getpass
 
@@ -14,21 +13,13 @@ except:
     pass
 
 os.system('py cfggen.py')
-os.system('pip install --upgrade pip')
+os.system('python.exe -m pip install --upgrade pip')
 os.system('pip install -r requirements.txt')
 
 if not os.path.exists(dest):
     os.makedirs(dest)
 
 for i in source:
-    shutil.copy(f'{os.getcwd()}/{i}', dest)
+    shutil.copy(f'{os.getcwd()}\\{i}', dest)
 
-link = 'https://www.nirsoft.net/utils/nircmd-x64.zip'
-r = requests.get(link)
-
-with open('nircmd.zip', 'wb') as f:
-    f.write(r.content)
-
-with zipfile.ZipFile('nircmd.zip', mode='r') as archive:
-    archive.extract('nircmd.exe', path=dest)
-os.remove('nircmd.zip')
+os.system('py nircmd.py')
