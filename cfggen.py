@@ -23,8 +23,8 @@ if language == 2:
      левый - 1 // центральный - 2 // правый - 3
                                   """))
 
-    volume_step = int(int(input('\n количество прибавляемой/убавляемой громкости с помощью бота за 1 нажатие. (только четные числа!. рекомендуется 2): '))/2)
-    if volume_step % 2 == 0:
+    volume_step = int(input('\n количество прибавляемой/убавляемой громкости с помощью бота за 1 нажатие. (только четные числа!. рекомендуется 2): '))
+    if volume_step % 2 != 0:
         print('ТОЛЬКО ЧЕТНЫЕ ЧИСЛА!!!!')
         input('хорошо?')
         os._exit()
@@ -49,8 +49,8 @@ if language == 1:
         Left - 1 // Center - 2 // Right - 3
         """))
 
-    volume_step = int(int(input('\nVolume increment/decrement with the bot for 1 press. (only even numbers!. recommended 2): ')) / 2)
-    if volume_step % 2 == 0:
+    volume_step = int(input('\nVolume increment/decrement with the bot for 1 press. (only even numbers!. recommended 2): '))
+    if volume_step % 2 != 0:
         print('ONLY EVEN NUMBERS!!!!')
         input('k?')
         os._exit()
@@ -68,7 +68,7 @@ else:
 config = open('config.py', 'x')
 with open('config.py', 'w') as cfg:
     cfg.write(f"""SCREEN_CONFIG = {moncfg}
-volume_step = {volume_step}
+volume_step = {int(volume_step//2)}
 BOT_TOKEN = \'{token}\'
 user = {user}""")
 
