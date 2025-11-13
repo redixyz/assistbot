@@ -6,7 +6,7 @@ from aiogram.types import Message
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 import sys
-sys.path.insert(1, "C:\\assistbot")
+#sys.path.insert(1, "C:\\assistbot")
 import config
 import markups
 import localfuncs
